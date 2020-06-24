@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SEARCH</title>
+</head>
+<body>
+    <div align="center">
+        <h3> 공시 서류 검색기 </h3>
+        <form method="post" action="/search">
+            <table border="1" align="center">
+                <tr>
+                    <th>보고서명</th>
+                    <td><input name="report" />
+                </tr>
+                <tr>
+                    <th>최대출력수</th>
+                    <td><input name="kan" />
+                </tr>
+                <tr>
+                    <th>시작날짜(8자리)</th>
+                    <td><input name="startdate" />
+                </tr>
+                <tr>
+                    <th>종료날짜(8자리)</th>
+                    <td><input name="enddate" />
+                </tr>
+                <tr>
+                    <th>종목명</th>
+                    <td><input name="stock" />
+                </tr>
+                <tr>
+                     <th colspan="2" align="center">
+                        <input type="submit" value='검색'/>
+                        <input type="reset" value='취소'/>
+                     </th>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
